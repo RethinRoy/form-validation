@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container .box {
+
+            height: 300px;
+            width: 300px;
+
+            margin-bottom: 30px;
+
+
+        }
+
+        input {
+            width: calc(190px);
+            padding: 12px 30px;
+            margin-left: 1px;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        button {
+            width: 50px;
+            padding: 12px 0;
+            cursor: pointer;
+        }
+
+        .buttons_group {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            display: flex;
+            justify-content: center;
+        }
+
+        .buttons_group button {
+            height: 40px;
+            width: 60px;
+            margin-right: 10px;
+        }
+
+        .sm {
+            box-shadow: 0 0 3px 3px rgba(0, 0, 0, .3);
+        }
+
+        .lg {
+            box-shadow: 0 0 7px 7px rgba(0, 0, 0, .7);
+        }
+
+        .shadow_class {
+            display: flex;
+            gap: 10px;
+        }
+
+        .im1 {
+            animation: guro 30s ease-in-out infinite;
+
+        }
+
+        @keyframes guro {
+            0% {
+                transform: rotate(0deg);
+                top: 0px;
+            }
+
+            100% {
+                transform: rotate(1440deg);
+                top: 40px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <button style="height: 100%; width:100%; padding: 0; margin: 0;" class="box">
+
+            </button>
+        </div>
+        <div class="content"> <input type="text" class="userInput" placeholder="Enter border Radius"> <button
+                id="AddRadius">add</button>
+
+        </div>
+    </div>
+
+    <div class="buttons_group">
+
+        <div class="color_btn">
+            <button data-value="red"></button>
+            <button data-value="yellow"></button>
+            <button data-value="green"></button>
+            <button data-value="blue"></button>
+            <button data-value="pink"></button>
+            <button data-value="hotpink"></button>
+            <button data-value="gray"></button>
+            <button data-value="black"></button>
+            <button data-value="white"></button>
+        </div>
+        <div class="shadow_class">
+            <button data-value="lg">LG</button>
+            <button data-value="sm">SM</button>
+        </div>
+    </div>
+    <script src="data.js"></script>
+</body>
+
+</html>

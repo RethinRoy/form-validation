@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from Validate</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="title">
+            <h3>Form Validation</h3>
+        </div>
+        <form action="">
+            <p class="nameBox">
+                <label for="name">Full name</label>
+                <input type="text" placeholder="Enter Your name" id="name">
+                <i class='bx'></i>
+                <span id="nameError"></span>
+            </p>
+            <p id="emailbox">
+                <label for="email">Email</label>
+                <input type="text" placeholder="Enter Your Email" id="email">
+                <i class='bx'></i>
+                <span id="emailError"></span>
+            </p>
+            <p id="passbox">
+                <label for="password">password</label>
+                <input type="text" placeholder="Enter Your name" id="password">
+                <i class='bx'></i>
+                <span id="passwordError"></span>
+            </p>
+            <p id="conpassword">
+                <label for="password">Confirm password</label>
+                <input type="text" placeholder="Confirm Password" id="conpass">
+                <i class=''></i>
+                <span id="conformpassError"></span>
+            </p>
+
+            <button id="submitButton">
+                Submit Form <i class='bx bx-right-arrow-alt'></i>
+            </button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
